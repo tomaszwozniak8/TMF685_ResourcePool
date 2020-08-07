@@ -1154,6 +1154,37 @@
                 "@baseType": {
                     "type": "string",
                     "description": "The base type for use in polymorphic collections"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "A string. free-text description of the availabilityCheck."
+                },
+                "relatedParty": {
+                    "$ref": "#/definitions/RelatedPartyRef"
+                },
+                "reservationState": {
+                    "type": "string",
+                    "description": "A string. The life cycle state of the reservation."
+                },
+                "valid_for": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The period of time for which the reservation is applicable."
+                },
+                "reservationItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ReservationItem"
+                    }
+                },
+                "channelRef": {
+                    "$ref": "#/definitions/ChannelRef"
+                },
+                "requestedPeriod": {
+                    "$ref": "#/definitions/RequestedPeriod"
+                },
+                "productOfferingRef": {
+                    "$ref": "#/definitions/ProductOfferingRef"
                 }
             }
         },
@@ -1172,6 +1203,37 @@
                 "@baseType": {
                     "type": "string",
                     "description": "The base type for use in polymorphic collections"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "A string. free-text description of the availabilityCheck."
+                },
+                "relatedParty": {
+                    "$ref": "#/definitions/RelatedPartyRef"
+                },
+                "reservationState": {
+                    "type": "string",
+                    "description": "A string. The life cycle state of the reservation."
+                },
+                "valid_for": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The period of time for which the reservation is applicable."
+                },
+                "reservationItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ReservationItem"
+                    }
+                },
+                "channelRef": {
+                    "$ref": "#/definitions/ChannelRef"
+                },
+                "requestedPeriod": {
+                    "$ref": "#/definitions/RequestedPeriod"
+                },
+                "productOfferingRef": {
+                    "$ref": "#/definitions/ProductOfferingRef"
                 }
             }
         },
